@@ -11,37 +11,37 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.block {
+.profile-menu {
     width: 315px;
     background-color: #eeecec;
     margin: 85px auto;
     border-radius: 10px;
 }
 
-.block ul li {
+.profile-menu-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     border-bottom: 1px solid #979daa;
     padding: 30px;
     list-style: none;
 }
 
-.block ul li:last-child {
+.profile-menu-item:last-child {
     border-bottom: 0;
 }
 
-.block ul li i {
+/* .profile-menu-item i {
     color: #767d8f;
     font-size: 20px;
     flex-basis: 18%;
-}
+} */
 
-.block ul li i:last-child {
+/* .profile-menu-item i:last-child {
     flex-basis: 0;
-}
+} */
 
-.list__text {
+.profile-menu-link {
     text-decoration: none;
     color: #727a8d;
     flex-grow: 1;
@@ -49,6 +49,73 @@ body {
     font-weight: 700;
 }
 
-.list__text:hover {
+.profile-menu-link:hover {
     color: #3d424e;
+}
+
+.profile-menu-link::after {
+    content: "";
+    background-image: url(../img/right.png);
+    width: 7px;
+    height: 9px;
+    float: right;
+    margin-top: 5px;
+}
+
+.profile-menu-item:nth-child(1) .profile-menu-link::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/user.png);
+    width: 20px;
+    height: 18px;
+}
+
+.profile-menu-item:nth-child(2) .profile-menu-link::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/facebook.png);
+    width: 20px;
+    height: 18px;
+}
+
+.profile-menu-item:nth-child(3) .profile-menu-link::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/twitter.png);
+    width: 20px;
+    height: 18px;
+}
+
+.profile-menu-item:nth-child(4) .profile-menu-link::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/instagram.png);
+    width: 20px;
+    height: 18px;
+}
+
+.profile-menu-item:nth-child(5) .profile-menu-link::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/cog.png);
+    width: 20px;
+    height: 18px;
+}
+
+.profile-menu-item:nth-child(6) .profile-menu-link::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/logout.png);
+    width: 20px;
+    height: 18px;
+}
+
+.profile-menu-link::before,
+.profile-menu-link::after {
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.profile-menu-link::before {
+    padding-right: 25px;
 }
