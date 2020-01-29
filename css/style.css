@@ -21,7 +21,6 @@ body {
 .profile-menu-item {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     border-bottom: 1px solid #979daa;
     padding: 30px;
     list-style: none;
@@ -30,16 +29,6 @@ body {
 .profile-menu-item:last-child {
     border-bottom: 0;
 }
-
-/* .profile-menu-item i {
-    color: #767d8f;
-    font-size: 20px;
-    flex-basis: 18%;
-} */
-
-/* .profile-menu-item i:last-child {
-    flex-basis: 0;
-} */
 
 .profile-menu-link {
     text-decoration: none;
@@ -50,7 +39,7 @@ body {
 }
 
 .profile-menu-link:hover {
-    color: #3d424e;
+    color: #a7aec0;
 }
 
 .profile-menu-link::after {
@@ -62,52 +51,35 @@ body {
     margin-top: 5px;
 }
 
-.profile-menu-item:nth-child(1) .profile-menu-link::before {
+.profile-menu-item .profile-menu-link::before {
     content: "";
     display: inline-block;
-    background-image: url(../img/user.png);
     width: 20px;
     height: 18px;
+}
+
+.profile-menu-item:nth-child(1) .profile-menu-link::before {
+    background-image: url(../img/user.png);
 }
 
 .profile-menu-item:nth-child(2) .profile-menu-link::before {
-    content: "";
-    display: inline-block;
     background-image: url(../img/facebook.png);
-    width: 20px;
-    height: 18px;
 }
 
 .profile-menu-item:nth-child(3) .profile-menu-link::before {
-    content: "";
-    display: inline-block;
     background-image: url(../img/twitter.png);
-    width: 20px;
-    height: 18px;
 }
 
 .profile-menu-item:nth-child(4) .profile-menu-link::before {
-    content: "";
-    display: inline-block;
     background-image: url(../img/instagram.png);
-    width: 20px;
-    height: 18px;
 }
 
 .profile-menu-item:nth-child(5) .profile-menu-link::before {
-    content: "";
-    display: inline-block;
     background-image: url(../img/cog.png);
-    width: 20px;
-    height: 18px;
 }
 
 .profile-menu-item:nth-child(6) .profile-menu-link::before {
-    content: "";
-    display: inline-block;
     background-image: url(../img/logout.png);
-    width: 20px;
-    height: 18px;
 }
 
 .profile-menu-link::before,
