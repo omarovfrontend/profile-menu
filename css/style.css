@@ -31,6 +31,7 @@ body {
 }
 
 .profile-menu-link {
+    position: relative;
     text-decoration: none;
     color: #727a8d;
     flex-grow: 1;
@@ -43,42 +44,43 @@ body {
 }
 
 .profile-menu-link::after {
+    position: absolute;
     content: "";
     background-image: url(../img/right.png);
     width: 7px;
     height: 9px;
-    float: right;
-    margin-top: 5px;
+    right: 0;
+    top: 5px;    
 }
 
-.profile-menu-item .profile-menu-link::before {
+.profile-menu-link::before {
     content: "";
     display: inline-block;
     width: 20px;
     height: 18px;
 }
 
-.profile-menu-item:nth-child(1) .profile-menu-link::before {
+.profile-menu-link_profile::before {
     background-image: url(../img/user.png);
 }
 
-.profile-menu-item:nth-child(2) .profile-menu-link::before {
+.profile-menu-link_facebook::before {
     background-image: url(../img/facebook.png);
 }
 
-.profile-menu-item:nth-child(3) .profile-menu-link::before {
+.profile-menu-link_twitter::before {
     background-image: url(../img/twitter.png);
 }
 
-.profile-menu-item:nth-child(4) .profile-menu-link::before {
+.profile-menu-link_instagram::before {
     background-image: url(../img/instagram.png);
 }
 
-.profile-menu-item:nth-child(5) .profile-menu-link::before {
+.profile-menu-link_settings::before {
     background-image: url(../img/cog.png);
 }
 
-.profile-menu-item:nth-child(6) .profile-menu-link::before {
+.profile-menu-link_logout::before {
     background-image: url(../img/logout.png);
 }
 
