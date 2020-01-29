@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #616a81;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.profile-menu {
+    width: 315px;
+    background-color: #eeecec;
+    margin: 85px auto;
+    border-radius: 10px;
+}
+
+.profile-menu-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #979daa;
+    padding: 30px;
+    list-style: none;
+}
+
+.profile-menu-item:last-child {
+    border-bottom: 0;
+}
+
+.profile-menu-link {
+    position: relative;
+    text-decoration: none;
+    color: #727a8d;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.profile-menu-link:hover {
+    color: #a7aec0;
+}
+
+.profile-menu-link::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/right.png);
+    width: 7px;
+    height: 9px;
+    right: 0;
+    top: 5px;    
+}
+
+.profile-menu-link::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+}
+
+.profile-menu-link_profile::before {
+    background-image: url(../img/user.png);
+}
+
+.profile-menu-link_facebook::before {
+    background-image: url(../img/facebook.png);
+}
+
+.profile-menu-link_twitter::before {
+    background-image: url(../img/twitter.png);
+}
+
+.profile-menu-link_instagram::before {
+    background-image: url(../img/instagram.png);
+}
+
+.profile-menu-link_settings::before {
+    background-image: url(../img/cog.png);
+}
+
+.profile-menu-link_logout::before {
+    background-image: url(../img/logout.png);
+}
+
+.profile-menu-link::before,
+.profile-menu-link::after {
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.profile-menu-link::before {
+    padding-right: 25px;
+}
