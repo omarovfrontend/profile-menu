@@ -1,4 +1,4 @@
 # profile-menu
 Верстка макета profile-menu
 
-Demo - https://omarov-frontend.github.io/profile-menu/
+Demo - https://omarovfrontend.github.io/profile-menu/
